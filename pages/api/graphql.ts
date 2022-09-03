@@ -1,4 +1,5 @@
 import { ApolloServer } from "apollo-server-micro";
+import "reflect-metadata";
 import { schema } from "graphql/schema";
 import { resolvers } from "graphql/resolvers";
 import Cors from "micro-cors";

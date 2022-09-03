@@ -38,7 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Database: postgreSQL hosted at railway.app
 - Prisma for DB migration, queries, and studio
 - Apollo Server Micro to host a GraphQL server on a NextJS serverless function
-- Nexus to build GraphQL schema off of prisma DB schema
+- TypeGgraphQL to build GraphQL schema off of prisma DB schema
 - GraphQL to connect frontend with server
 - NextJS as a fullstack framework (serveless functions and ReactJS frontend with full SSR support)
 - NextAuth
@@ -53,7 +53,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## What Apollo is doing
 
-## What Nexus does
+## What TypeGraphQL does
 
 ## GraphQL Basics
 

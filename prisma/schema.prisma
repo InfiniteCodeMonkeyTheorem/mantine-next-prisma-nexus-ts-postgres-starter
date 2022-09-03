@@ -5,6 +5,11 @@ generator client {
   provider = "prisma-client-js"
 }
 
+generator typegraphql {
+  provider = "typegraphql-prisma"
+  output   = "../graphql/generated/type-graphql"
+}
+
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
@@ -45,6 +50,7 @@ model User {
   image         String?
   accounts      Account[]
   sessions      Session[]
+  things        Thing[]
 }
 
 model VerificationToken {
@@ -53,4 +59,14 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+}
+
+model Thing {
+  id            String    @id @default(cuid())
+  name          String?   @unique
+  description   String?   
+  quantity      Int
+  image         String?
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
