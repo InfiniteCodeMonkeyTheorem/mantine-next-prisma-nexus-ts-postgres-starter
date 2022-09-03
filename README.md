@@ -32,3 +32,31 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## The Stack
+
+- Database: postgreSQL hosted at railway.app
+- Prisma for DB migration, queries, and studio
+- Apollo Server Micro to host a GraphQL server on a NextJS serverless function
+- Nexus to build GraphQL schema off of prisma DB schema
+- GraphQL to connect frontend with server
+- NextJS as a fullstack framework (serveless functions and ReactJS frontend with full SSR support)
+- NextAuth
+- Stripe
+- MantineUI and Styled Components for UI
+- Testing: Cypress
+- Logging:
+
+## Working with Postgres and Railway
+
+## How to use Prisma
+
+## What Apollo is doing
+
+## What Nexus does
+
+## GraphQL Basics
+
+## NextJS Key Points
+
+## Stripe Info
